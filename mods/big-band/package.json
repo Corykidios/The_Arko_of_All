@@ -1,0 +1,16 @@
+{
+  "name": "@corykidios/big-band",
+  "version": "0.0.1-skeleton",
+  "description": "Letta Code mod package: multi-agent band orchestration - every member hears the user and each other.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": ["letta-package", "letta-mod", "letta-code", "big-band"],
+  "files": ["README.md", "MOD.md", "mods", "src"],
+  "letta": {
+    "manifestVersion": 1,
+    "mods": ["./mods/index.ts"],
+    "capabilities": ["tools", "commands", "events"],
+    "engines": { "lettaCodeCli": ">=0.34.0" }
+  },
+  "scripts": { "test": "node --experimental-strip-types --test test/big-band.test.mjs" }
+}
